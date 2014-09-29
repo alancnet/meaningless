@@ -1,0 +1,25 @@
+.navbar-app {
+    @media (max-width: 767px) {
+        .container {
+            margin-left: 0;
+            margin-right: 0;
+        };
+
+        .navbar-nav {
+            margin-top: 0;
+            margin-bottom: 0;
+            .flexbox();
+            & > li {
+                .flex(1);
+                //float: left;
+                display: inline-block;
+                text-align: center;
+                font-size: .75em;
+                & > a > i.fa {
+                    display: block;
+                    zoom: 2;
+                }
+            }
+        }
+    }
+}

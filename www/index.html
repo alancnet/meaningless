@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <title>Project Name</title>
+        <!--<script src="https://getfirebug.com/firebug-lite-debug.js"></script>-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="compiled/app.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="content/app.min.css" />
+    </head>
+    <body ng-controller="MainController as main">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container col-sm-12">
+                <nav class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-2 fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="">Project name</a>
+                </nav>
+                <nav class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../navbar/">Default</a></li>
+                        <li><a href="../navbar-static-top/">Static top</a></li>
+                        <li class="active"><a href="./">Fixed top</a></li>
+                    </ul>
+                </nav><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <ng-view></ng-view>
+        <footer class="navbar navbar-fixed-bottom navbar-app">
+            <div class="container col-sm-12">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/"><i class="fa fa-envelope"></i> E-Mail</a></li>
+                    <li><a href="#/"><i class="fa fa-eject"></i> Eject</a></li>
+                    <li><a href="#/"><i class="fa fa-cog"></i> Settings</a></li>
+                </ul>
+            </div>
+        </footer>        
+    </body>    
+</html>
